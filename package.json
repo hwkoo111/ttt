@@ -1,0 +1,14 @@
+{
+  "name": "movietalk-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd backend && gradlew.bat bootRun\" \"cd capfront && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "dependencies": {
+    "movietalk-monorepo": "file:"
+  }
+}
